@@ -257,3 +257,8 @@ func boundingBox(r1, r2 *Rect) *Rect {
 	initBoundingBox(&r, r1, r2)
 	return &r
 }
+
+// boundingBox constructs the smallest rectangle containing both r1 and r2.
+func BoundingBox2(r1, r2 *Rect) (bb *Rect) {
+	return boundingBox(r1, r2)
+}
